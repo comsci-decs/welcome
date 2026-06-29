@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECS – Department of Engineering &amp; Computer Studies</title>
+  <meta name="description" content="Official about page of the Department of Engineering and Computer Studies (DECS) – meet our officers, executive body, and representatives." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       SPLASH SCREEN
+  ════════════════════════════════════════ -->
+  <div id="splash-screen">
+    <div class="splash-bg-noise"></div>
+    <div class="splash-inner">
+      <div class="splash-emblem">
+        <div class="emblem-ring r1"></div>
+        <div class="emblem-ring r2"></div>
+        <div class="emblem-ring r3"></div>
+        <div class="emblem-core">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" stroke="url(#splash-grad)" stroke-width="1.5"/>
+            <path d="M20 24L13 32L20 40" stroke="#E85D04" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M44 24L51 32L44 40" stroke="#C0C0C0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M37 18L27 46" stroke="url(#splash-grad)" stroke-width="2.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="splash-grad" x1="0" y1="0" x2="64" y2="64">
+                <stop offset="0%" stop-color="#DC143C"/>
+                <stop offset="100%" stop-color="#E85D04"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <div class="splash-wordmark">
+        <span class="splash-acronym">DECS</span>
+        <div class="splash-divider-line"></div>
+        <span class="splash-full-name">Department of Engineering<br/>&amp; Computer Studies</span>
+      </div>
+
+      <div class="splash-loader-wrap">
+        <div class="loader"></div>
+      </div>
+      <p class="splash-status">Loading<span class="blink-dots"></span></p>
+    </div>
+    <div id="splashParticles" class="splash-particles"></div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo-wrap" id="navLogo">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30" stroke="url(#nl)" stroke-width="1.5"/>
+          <path d="M20 24L13 32L20 40" stroke="#E85D04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M44 24L51 32L44 40" stroke="#C0C0C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M37 18L27 46" stroke="url(#nl)" stroke-width="2" stroke-linecap="round"/>
+          <defs><linearGradient id="nl" x1="0" y1="0" x2="64" y2="64"><stop offset="0%" stop-color="#DC143C"/><stop offset="100%" stop-color="#E85D04"/></linearGradient></defs>
+        </svg>
+        <span class="nav-brand">DECS</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"      class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about"     class="nav-link" data-section="about">About</a></li>
+        <li><a href="#story"     class="nav-link" data-section="story">Our Story</a></li>
+        <li><a href="#executive" class="nav-link" data-section="executive">Executive</a></li>
+        <li><a href="#auxiliary" class="nav-link" data-section="auxiliary">Auxiliary</a></li>
+        <li><a href="#follow"    class="nav-link" data-section="follow">Follow Us</a></li>
+        <li><a href="#contact"   class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg">
+      <div class="hero-spotlight sp1"></div>
+      <div class="hero-spotlight sp2"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="reveal-up delay-0">
+        <span class="eyebrow-tag">Academic Year 2025 – 2026</span>
+      </div>
+      <h1 class="hero-headline reveal-up delay-1">
+        <span class="line-top">Engineering</span>
+        <span class="line-accent">&amp; Computer</span>
+        <span class="line-bottom">Studies</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        Forging tomorrow's engineers and computer scientists<br/>
+        through bold ideas, relentless excellence, and innovation.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#executive" class="cta-primary" id="heroMeetBtn">Meet Our Officers</a>
+        <a href="#about"     class="cta-ghost"   id="heroAboutBtn">Our Story ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-stats reveal-up delay-4">
+      <div class="hstat">
+        <span class="hstat-num">2</span>
+        <span class="hstat-label">Programs</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-num">8</span>
+        <span class="hstat-label">Executive Officers</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-num">8</span>
+        <span class="hstat-label">Year Representatives</span>
+      </div>
+    </div>
+
+    <div class="scroll-cue" id="scrollCue">
+      <div class="scroll-cue-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       LOGOS STRIP
+  ════════════════════════════════════════ -->
+  <div class="logos-strip">
+    <div class="logos-strip-inner">
+
+      <!-- DECS -->
+      <div class="org-logo-wrap scroll-reveal" id="logo-decs">
+        <div class="org-logo-square decs-logo">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80" height="80" rx="18" fill="url(#decs-bg)"/>
+            <!-- Circuit-style D icon -->
+            <path d="M22 24h14c8 0 14 6 14 16s-6 16-14 16H22V24z" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="36" cy="40" r="6" fill="rgba(255,255,255,0.15)" stroke="#fff" stroke-width="1.5"/>
+            <line x1="22" y1="40" x2="30" y2="40" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2"/>
+            <!-- Dot nodes -->
+            <circle cx="22" cy="24" r="2.5" fill="#fff"/>
+            <circle cx="22" cy="56" r="2.5" fill="#fff"/>
+            <defs>
+              <linearGradient id="decs-bg" x1="0" y1="0" x2="80" y2="80">
+                <stop offset="0%" stop-color="#DC143C"/>
+                <stop offset="100%" stop-color="#A00F2C"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="org-logo-placeholder-text">Logo Here</div>
+        </div>
+        <div class="org-logo-info">
+          <span class="org-logo-abbr">DECS</span>
+          <span class="org-logo-full">Dept. of Engineering &amp; Computer Studies</span>
+        </div>
+      </div>
+
+      <div class="logos-sep"></div>
+
+      <!-- ACoES -->
+      <div class="org-logo-wrap scroll-reveal delay-1" id="logo-acoes">
+        <div class="org-logo-square acoes-logo">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80" height="80" rx="18" fill="url(#acoes-bg)"/>
+            <!-- Chip / Engineering symbol -->
+            <rect x="26" y="26" width="28" height="28" rx="5" stroke="#fff" stroke-width="2" fill="rgba(255,255,255,0.08)"/>
+            <!-- Pins left -->
+            <line x1="16" y1="33" x2="26" y2="33" stroke="#fff" stroke-width="1.8"/>
+            <line x1="16" y1="40" x2="26" y2="40" stroke="#fff" stroke-width="1.8"/>
+            <line x1="16" y1="47" x2="26" y2="47" stroke="#fff" stroke-width="1.8"/>
+            <!-- Pins right -->
+            <line x1="54" y1="33" x2="64" y2="33" stroke="#fff" stroke-width="1.8"/>
+            <line x1="54" y1="40" x2="64" y2="40" stroke="#fff" stroke-width="1.8"/>
+            <line x1="54" y1="47" x2="64" y2="47" stroke="#fff" stroke-width="1.8"/>
+            <!-- Inner mark -->
+            <text x="40" y="44" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="monospace">CPE</text>
+            <defs>
+              <linearGradient id="acoes-bg" x1="0" y1="0" x2="80" y2="80">
+                <stop offset="0%" stop-color="#DC143C"/>
+                <stop offset="100%" stop-color="#E85D04"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="org-logo-placeholder-text">Logo Here</div>
+        </div>
+        <div class="org-logo-info">
+          <span class="org-logo-abbr acoes-abbr">ACoES</span>
+          <span class="org-logo-full">Assoc. of Computer Engineering Students</span>
+        </div>
+      </div>
+
+      <div class="logos-sep"></div>
+
+      <!-- CCSS -->
+      <div class="org-logo-wrap scroll-reveal delay-2" id="logo-ccss">
+        <div class="org-logo-square ccss-logo">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80" height="80" rx="18" fill="url(#ccss-bg)"/>
+            <!-- Code brackets -->
+            <path d="M32 28L20 40L32 52" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M48 28L60 40L48 52" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="43" y1="24" x2="37" y2="56" stroke="rgba(255,255,255,0.6)" stroke-width="1.8" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="ccss-bg" x1="0" y1="0" x2="80" y2="80">
+                <stop offset="0%" stop-color="#555"/>
+                <stop offset="100%" stop-color="#999"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="org-logo-placeholder-text">Logo Here</div>
+        </div>
+        <div class="org-logo-info">
+          <span class="org-logo-abbr ccss-abbr">CCSS</span>
+          <span class="org-logo-full">Council of Computer Science Students</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label scroll-reveal">Who We Are</div>
+      <h2 class="section-mega scroll-reveal delay-1">About<br/><em>DECS</em></h2>
+
+      <div class="about-split">
+        <div class="about-text scroll-reveal delay-2">
+          <p class="about-lead">A powerhouse of engineering and computer science education — where curiosity meets craft.</p>
+          <p class="about-body">The Department of Engineering and Computer Studies stands as a beacon of academic excellence, producing technically-skilled, morally-grounded, and globally-competitive graduates ready to shape the world.</p>
+          <p class="about-body">We offer two flagship programs — BS Computer Science and BS Computer Engineering — built for the demands of a fast-evolving digital landscape.</p>
+        </div>
+        <div class="about-pillars scroll-reveal delay-3">
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="pillar-title">Mission</h3>
+              <p class="pillar-text">Provide quality education that equips students with skills, knowledge, and values for professional excellence and lifelong learning.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h3 class="pillar-title">Vision</h3>
+              <p class="pillar-text">A leading department producing globally competitive graduates driving technological innovation and contributing to society.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none"><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="pillar-title">Excellence</h3>
+              <p class="pillar-text">Unwavering commitment to academic rigor, innovation, and the holistic development of every student in the department.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       OUR STORY
+  ════════════════════════════════════════ -->
+  <section id="story" class="section story-section">
+    <div class="container">
+      <div class="section-label scroll-reveal">History</div>
+      <h2 class="section-mega scroll-reveal delay-1">Our<br/><em>Story</em></h2>
+
+      <div class="story-body">
+        <div class="story-text scroll-reveal delay-2">
+          <p>The history of the Department of Engineering and Computer Studies (DECS) is a story of growth, transformation, and the enduring spirit of student leadership. Its roots can be traced to the institution's commitment to developing future professionals in technology, computing, and engineering.</p>
+          <p>Before becoming DECS, the academic unit was known as the <strong>School of Engineering and Information Technology Education (SEITE)</strong>. Under SEITE, programs in computing and information technology continued to develop and respond to the growing demand for technology-focused education. Prior to this, the institution's computing programs were housed under the <strong>College of Computer Studies (CCS)</strong>, which produced its first graduates in 1991, marking an important milestone in the history of computing education within the school.</p>
+          <p>As the College of Computer Studies expanded, students recognized the need for a unified organization that would represent their interests and strengthen the academic community. In <strong>1995</strong>, the <strong>Association of Computer Engineering and Computer Science Students (ACCESS)</strong> was established — the official student organization representing both Computer Engineering and Computer Science students, promoting leadership, academic excellence, student engagement, and professional growth.</p>
+          <p>The continued growth of the student population eventually led to the creation of specialized organizations. In <strong>1997</strong>, the <strong>Association of Computer Engineering Students (ACoES)</strong> was formed to focus on the needs and development of Computer Engineering students. Two years later, in <strong>1999</strong>, the <strong>Council of Computer Science Students (CCSS)</strong> was established to serve as the official student organization for Computer Science students. Though they became separate organizations, both ACoES and CCSS inherited the traditions, values, and vision established by ACCESS.</p>
+          <p>Through the years, these organizations played an important role in student life — organizing academic competitions, seminars, workshops, leadership programs, outreach projects, and community-building activities that enriched the student experience and prepared members for their future careers.</p>
+          <p>As the institution evolved, SEITE was eventually reorganized into the <strong>Department of Engineering and Computer Studies (DECS)</strong>, bringing together its engineering and computing programs under a unified academic department. This transition reflected the institution's commitment to adapting to the changing landscape of technology and engineering education while preserving the legacy built by previous generations of students and educators.</p>
+          <p>Following a period during which the Computer Science program was temporarily not offered, <strong>2026</strong> marked the beginning of a new chapter. The return of the program brought with it the revival of the <strong>Council of Computer Science Students (CCSS)</strong>, restoring a student organization whose roots could be traced back to ACCESS. With a new generation of students entering the program, CCSS once again became a platform for leadership, collaboration, and academic growth.</p>
+          <p>Today, the story of DECS is shaped not only by its academic programs but also by the students who have carried its traditions forward. United by a common heritage and driven by a vision for the future, ACoES and CCSS continue to uphold the legacy of ACCESS while inspiring the next generation of engineers, computer scientists, and technology professionals within DECS.</p>
+        </div>
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="timeline-label scroll-reveal">
+        <div class="officers-label-line"></div>
+        <span>Historical Timeline</span>
+        <div class="officers-label-line"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item scroll-reveal delay-1" id="tl-1991">
+          <div class="tl-year">1991</div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <h4 class="tl-title">First CCS Graduates</h4>
+            <p class="tl-desc">First graduates produced under the <strong>College of Computer Studies (CCS)</strong>, marking a landmark milestone in computing education at the institution.</p>
+          </div>
+        </div>
+
+        <div class="tl-item scroll-reveal delay-2" id="tl-1995">
+          <div class="tl-year">1995</div>
+          <div class="tl-connector"><div class="tl-dot dot-crimson"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <h4 class="tl-title">ACCESS Established</h4>
+            <p class="tl-desc">Formation of the <strong>Association of Computer Engineering and Computer Science Students (ACCESS)</strong> — the first unified student organization representing all CCS students.</p>
+          </div>
+        </div>
+
+        <div class="tl-item scroll-reveal delay-1" id="tl-1997">
+          <div class="tl-year">1997</div>
+          <div class="tl-connector"><div class="tl-dot dot-orange"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <h4 class="tl-title">ACoES Founded</h4>
+            <p class="tl-desc">Formation of the <strong>Association of Computer Engineering Students (ACoES)</strong>, a specialized organization dedicated to the growth and development of Computer Engineering students.</p>
+          </div>
+        </div>
+
+        <div class="tl-item scroll-reveal delay-2" id="tl-1999">
+          <div class="tl-year">1999</div>
+          <div class="tl-connector"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <h4 class="tl-title">CCSS Founded</h4>
+            <p class="tl-desc">Establishment of the <strong>Council of Computer Science Students (CCSS)</strong>, serving as the dedicated student organization for Computer Science students, building on the legacy of ACCESS.</p>
+          </div>
+        </div>
+
+        <div class="tl-item scroll-reveal delay-1" id="tl-2000s">
+          <div class="tl-year">2000s<br/>– 2020s</div>
+          <div class="tl-connector"><div class="tl-dot dot-silver"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <h4 class="tl-title">SEITE Era</h4>
+            <p class="tl-desc">Academic programs continued under the <strong>School of Engineering and Information Technology Education (SEITE)</strong>, strengthening engineering and technology education within the institution.</p>
+          </div>
+        </div>
+
+        <div class="tl-item scroll-reveal delay-2" id="tl-2026">
+          <div class="tl-year">2026</div>
+          <div class="tl-connector"><div class="tl-dot dot-crimson"></div><div class="tl-line"></div></div>
+          <div class="tl-card tl-card--featured">
+            <div class="tl-featured-badge">New Chapter</div>
+            <h4 class="tl-title">CS Revival &amp; CCSS Returns</h4>
+            <p class="tl-desc">Revival of the <strong>Computer Science program</strong> and the renewed presence of <strong>CCSS</strong>, welcoming a new generation of Computer Science students and future graduates.</p>
+          </div>
+        </div>
+
+        <div class="tl-item tl-item--present scroll-reveal delay-1" id="tl-present">
+          <div class="tl-year tl-year--present">Present</div>
+          <div class="tl-connector"><div class="tl-dot dot-glow"></div></div>
+          <div class="tl-card">
+            <h4 class="tl-title">DECS — Continuing the Legacy</h4>
+            <p class="tl-desc">The <strong>Department of Engineering and Computer Studies (DECS)</strong> continues the legacy of CCS and SEITE, with <strong>ACoES</strong> and <strong>CCSS</strong> serving as student organizations dedicated to leadership, academic excellence, innovation, and service.</p>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       EXECUTIVE BODY
+  ════════════════════════════════════════ -->
+  <section id="executive" class="section executive-section">
+    <div class="executive-stripe"></div>
+    <div class="container">
+      <div class="section-label scroll-reveal">Leadership</div>
+      <h2 class="section-mega scroll-reveal delay-1">Executive<br/><em>Body</em></h2>
+
+      <!-- ── FORMER PROGRAM CHAIRS ── -->
+      <div class="former-chairs-wrap scroll-reveal delay-1">
+        <div class="former-chairs-header">
+          <div class="former-chairs-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.5 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.41 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16a2 2 0 0 1 .5.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h3 class="former-chairs-title">Former Program Chairs</h3>
+            <p class="former-chairs-sub">The distinguished leaders who shaped the department through the years.</p>
+          </div>
+        </div>
+        <div class="former-chairs-list">
+          <div class="chair-item" id="chair-1">
+            <div class="chair-index">01</div>
+            <div class="chair-details">
+              <span class="chair-name">Mr. Salvador L. Valencia</span>
+              <span class="chair-creds">MSAGRI</span>
+            </div>
+          </div>
+          <div class="chair-item" id="chair-2">
+            <div class="chair-index">02</div>
+            <div class="chair-details">
+              <span class="chair-name">Engr. Richard N. Mangay</span>
+              <span class="chair-creds">MS ManE, LPT, PCPE</span>
+            </div>
+          </div>
+          <div class="chair-item" id="chair-3">
+            <div class="chair-index">03</div>
+            <div class="chair-details">
+              <span class="chair-name">Ms. Evelyn L. Mercado</span>
+              <span class="chair-creds">MSCS</span>
+            </div>
+          </div>
+          <div class="chair-item" id="chair-4">
+            <div class="chair-index">04</div>
+            <div class="chair-details">
+              <span class="chair-name">Engr. Mark Angelo T. Mercado</span>
+              <span class="chair-creds">MIT</span>
+            </div>
+          </div>
+          <div class="chair-item" id="chair-5">
+            <div class="chair-index">05</div>
+            <div class="chair-details">
+              <span class="chair-name">Dr. Eulalia M. Javier</span>
+              <span class="chair-creds">LPT, Ed.D</span>
+            </div>
+          </div>
+          <div class="chair-item chair-item--current" id="chair-6">
+            <div class="chair-index">06</div>
+            <div class="chair-details">
+              <span class="chair-name">Engr. Andzej D. De Castro</span>
+              <span class="chair-creds">MSCpE · CAR</span>
+            </div>
+            <span class="chair-current-pill">Current</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── FACULTY ADVISERS ── -->
+      <div class="faculty-row">
+        <!-- Program Chair -->
+        <div class="faculty-card scroll-reveal delay-2" id="card-chair">
+          <div class="faculty-photo-wrap">
+            <div class="faculty-photo">
+              <div class="photo-silhouette">
+                <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="100" cy="75" r="52" fill="rgba(220,20,60,0.15)" stroke="rgba(220,20,60,0.3)" stroke-width="1.5"/>
+                  <path d="M20 200 C20 160 55 135 100 135 C145 135 180 160 180 200" fill="rgba(220,20,60,0.1)" stroke="rgba(220,20,60,0.25)" stroke-width="1.5"/>
+                  <!-- Face details -->
+                  <circle cx="85" cy="70" r="5" fill="rgba(220,20,60,0.4)"/>
+                  <circle cx="115" cy="70" r="5" fill="rgba(220,20,60,0.4)"/>
+                  <path d="M88 92 Q100 100 112 92" stroke="rgba(220,20,60,0.5)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <div class="faculty-photo-label">Photo Here</div>
+            </div>
+            <div class="faculty-role-pill chair-pill">Program Chair · CAR</div>
+          </div>
+          <div class="faculty-info">
+            <p class="faculty-degree">MSCpE</p>
+            <h3 class="faculty-name">Engr. Andzej D.<br/>De Castro</h3>
+            <p class="faculty-position">Program Chair<br/>Department of Engineering and Computer Studies</p>
+            <div class="faculty-tag-row">
+              <span class="ftag">Computer Engineering</span>
+              <span class="ftag">Administration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adviser -->
+        <div class="faculty-card scroll-reveal delay-3" id="card-adviser">
+          <div class="faculty-photo-wrap">
+            <div class="faculty-photo faculty-photo--silver">
+              <div class="photo-silhouette">
+                <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="100" cy="75" r="52" fill="rgba(192,192,192,0.12)" stroke="rgba(192,192,192,0.28)" stroke-width="1.5"/>
+                  <path d="M20 200 C20 160 55 135 100 135 C145 135 180 160 180 200" fill="rgba(192,192,192,0.08)" stroke="rgba(192,192,192,0.22)" stroke-width="1.5"/>
+                  <circle cx="85" cy="70" r="5" fill="rgba(192,192,192,0.4)"/>
+                  <circle cx="115" cy="70" r="5" fill="rgba(192,192,192,0.4)"/>
+                  <path d="M88 92 Q100 100 112 92" stroke="rgba(192,192,192,0.5)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <div class="faculty-photo-label">Photo Here</div>
+            </div>
+            <div class="faculty-role-pill adviser-pill">Faculty Adviser</div>
+          </div>
+          <div class="faculty-info">
+            <p class="faculty-degree">MSCS</p>
+            <h3 class="faculty-name">Evelyn L.<br/>Mercado</h3>
+            <p class="faculty-position">Faculty Adviser<br/>DECS Student Organization</p>
+            <div class="faculty-tag-row">
+              <span class="ftag ftag--silver">Computer Science</span>
+              <span class="ftag ftag--silver">Adviser</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── OFFICER CARDS ── -->
+      <div class="officers-label scroll-reveal">
+        <div class="officers-label-line"></div>
+        <span>Student Officers</span>
+        <div class="officers-label-line"></div>
+      </div>
+
+      <div class="officers-grid">
+
+        <!-- PRESIDENT – full width feature -->
+        <div class="officer-featured scroll-reveal delay-1" id="ofc-president">
+          <div class="ofc-feat-photo">
+            <div class="ofc-photo-inner feat-photo-inner">
+              <svg viewBox="0 0 260 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="130" cy="100" r="68" fill="rgba(220,20,60,0.12)" stroke="rgba(220,20,60,0.35)" stroke-width="1.5"/>
+                <path d="M20 270 C20 210 65 175 130 175 C195 175 240 210 240 270" fill="rgba(220,20,60,0.08)" stroke="rgba(220,20,60,0.28)" stroke-width="1.5"/>
+                <circle cx="110" cy="95" r="7" fill="rgba(220,20,60,0.45)"/>
+                <circle cx="150" cy="95" r="7" fill="rgba(220,20,60,0.45)"/>
+                <path d="M113 120 Q130 132 147 120" stroke="rgba(220,20,60,0.6)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="ofc-photo-overlay">Photo Here</div>
+            </div>
+            <div class="crown-badge">
+              <svg viewBox="0 0 32 18" fill="none"><path d="M2 14L7 3L16 10L25 3L30 14H2Z" fill="url(#cg)"/><defs><linearGradient id="cg" x1="0" y1="0" x2="32" y2="18"><stop offset="0%" stop-color="#DC143C"/><stop offset="100%" stop-color="#E85D04"/></linearGradient></defs></svg>
+            </div>
+          </div>
+          <div class="ofc-feat-info">
+            <span class="ofc-number">01</span>
+            <div class="ofc-position-tag">President</div>
+            <h3 class="ofc-feat-name">To Be Announced</h3>
+            <p class="ofc-feat-desc">Leads the organization, presides over meetings, represents the department in all official functions, and champions the DECS community.</p>
+            <div class="ofc-feat-meta">
+              <span>Executive Body</span>
+              <span>AY 2025–2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VP CS -->
+        <div class="officer-card scroll-reveal delay-1" id="ofc-vpcs">
+          <div class="ofc-photo-wrap">
+            <div class="ofc-photo">
+              <svg viewBox="0 0 160 180" fill="none"><circle cx="80" cy="62" r="44" fill="rgba(232,93,4,0.12)" stroke="rgba(232,93,4,0.3)" stroke-width="1.5"/><path d="M10 170 C10 132 40 108 80 108 C120 108 150 132 150 170" fill="rgba(232,93,4,0.08)" stroke="rgba(232,93,4,0.22)" stroke-width="1.5"/><circle cx="68" cy="58" r="5" fill="rgba(232,93,4,0.45)"/><circle cx="92" cy="58" r="5" fill="rgba(232,93,4,0.45)"/><path d="M70 76 Q80 84 90 76" stroke="rgba(232,93,4,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              <div class="ofc-photo-label">Photo Here</div>
+            </div>
+          </div>
+          <div class="ofc-info">
+            <span class="ofc-num-small">02</span>
+            <span class="ofc-pos">VP – Computer Science</span>
+            <h4 class="ofc-name">To Be Announced</h4>
+          </div>
+        </div>
+
+        <!-- VP CPE -->
+        <div class="officer-card scroll-reveal delay-2" id="ofc-vpcpe">
+          <div class="ofc-photo-wrap">
+            <div class="ofc-photo ofc-photo--silver">
+              <svg viewBox="0 0 160 180" fill="none"><circle cx="80" cy="62" r="44" fill="rgba(192,192,192,0.1)" stroke="rgba(192,192,192,0.28)" stroke-width="1.5"/><path d="M10 170 C10 132 40 108 80 108 C120 108 150 132 150 170" fill="rgba(192,192,192,0.07)" stroke="rgba(192,192,192,0.2)" stroke-width="1.5"/><circle cx="68" cy="58" r="5" fill="rgba(192,192,192,0.4)"/><circle cx="92" cy="58" r="5" fill="rgba(192,192,192,0.4)"/><path d="M70 76 Q80 84 90 76" stroke="rgba(192,192,192,0.5)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              <div class="ofc-photo-label">Photo Here</div>
+            </div>
+          </div>
+          <div class="ofc-info">
+            <span class="ofc-num-small">03</span>
+            <span class="ofc-pos ofc-pos--silver">VP – Computer Engineering</span>
+            <h4 class="ofc-name">To Be Announced</h4>
+          </div>
+        </div>
+
+        <!-- SECRETARY -->
+        <div class="officer-card scroll-reveal delay-3" id="ofc-secretary">
+          <div class="ofc-photo-wrap">
+            <div class="ofc-photo ofc-photo--orange">
+              <svg viewBox="0 0 160 180" fill="none"><circle cx="80" cy="62" r="44" fill="rgba(220,20,60,0.1)" stroke="rgba(220,20,60,0.28)" stroke-width="1.5"/><path d="M10 170 C10 132 40 108 80 108 C120 108 150 132 150 170" fill="rgba(220,20,60,0.07)" stroke="rgba(220,20,60,0.2)" stroke-width="1.5"/><circle cx="68" cy="58" r="5" fill="rgba(220,20,60,0.4)"/><circle cx="92" cy="58" r="5" fill="rgba(220,20,60,0.4)"/><path d="M70 76 Q80 84 90 76" stroke="rgba(220,20,60,0.5)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              <div class="ofc-photo-label">Photo Here</div>
+            </div>
+          </div>
+          <div class="ofc-info">
+            <span class="ofc-num-small">04</span>
+            <span class="ofc-pos ofc-pos--crimson">Secretary</span>
+            <h4 class="ofc-name">To Be Announced</h4>
+          </div>
+        </div>
+
+        <!-- TREASURER -->
+        <div class="officer-card scroll-reveal delay-1" id="ofc-treasurer">
+          <div class="ofc-photo-wrap">
+            <div class="ofc-photo">
+              <svg viewBox="0 0 160 180" fill="none"><circle cx="80" cy="62" r="44" fill="rgba(232,93,4,0.12)" stroke="rgba(232,93,4,0.3)" stroke-width="1.5"/><path d="M10 170 C10 132 40 108 80 108 C120 108 150 132 150 170" fill="rgba(232,93,4,0.08)" stroke="rgba(232,93,4,0.22)" stroke-width="1.5"/><circle cx="68" cy="58" r="5" fill="rgba(232,93,4,0.45)"/><circle cx="92" cy="58" r="5" fill="rgba(232,93,4,0.45)"/><path d="M70 76 Q80 84 90 76" stroke="rgba(232,93,4,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              <div class="ofc-photo-label">Photo Here</div>
+            </div>
+          </div>
+          <div class="ofc-info">
+            <span class="ofc-num-small">05</span>
+            <span class="ofc-pos">Treasurer</span>
+            <h4 class="ofc-name">To Be Announced</h4>
+          </div>
+        </div>
+
+        <!-- AUDITOR -->
+        <div class="officer-card scroll-reveal delay-2" id="ofc-auditor">
+          <div class="ofc-photo-wrap">
+            <div class="ofc-photo ofc-photo--silver">
+              <svg viewBox="0 0 160 180" fill="none"><circle cx="80" cy="62" r="44" fill="rgba(192,192,192,0.1)" stroke="rgba(192,192,192,0.28)" stroke-width="1.5"/><path d="M10 170 C10 132 40 108 80 108 C120 108 150 132 150 170" fill="rgba(192,192,192,0.07)" stroke="rgba(192,192,192,0.2)" stroke-width="1.5"/><circle cx="68" cy="58" r="5" fill="rgba(192,192,192,0.4)"/><circle cx="92" cy="58" r="5" fill="rgba(192,192,192,0.4)"/><path d="M70 76 Q80 84 90 76" stroke="rgba(192,192,192,0.5)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              <div class="ofc-photo-label">Photo Here</div>
+            </div>
+          </div>
+          <div class="ofc-info">
+            <span class="ofc-num-small">06</span>
+            <span class="ofc-pos ofc-pos--silver">Auditor</span>
+            <h4 class="ofc-name">To Be Announced</h4>
+          </div>
+        </div>
+
+        <!-- PRO 1 -->
+        <div class="officer-card scroll-reveal delay-3" id="ofc-pro1">
+          <div class="ofc-photo-wrap">
+            <div class="ofc-photo ofc-photo--orange">
+              <svg viewBox="0 0 160 180" fill="none"><circle cx="80" cy="62" r="44" fill="rgba(220,20,60,0.1)" stroke="rgba(220,20,60,0.28)" stroke-width="1.5"/><path d="M10 170 C10 132 40 108 80 108 C120 108 150 132 150 170" fill="rgba(220,20,60,0.07)" stroke="rgba(220,20,60,0.2)" stroke-width="1.5"/><circle cx="68" cy="58" r="5" fill="rgba(220,20,60,0.4)"/><circle cx="92" cy="58" r="5" fill="rgba(220,20,60,0.4)"/><path d="M70 76 Q80 84 90 76" stroke="rgba(220,20,60,0.5)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              <div class="ofc-photo-label">Photo Here</div>
+            </div>
+          </div>
+          <div class="ofc-info">
+            <span class="ofc-num-small">07</span>
+            <span class="ofc-pos ofc-pos--crimson">PRO 1</span>
+            <h4 class="ofc-name">To Be Announced</h4>
+          </div>
+        </div>
+
+        <!-- PRO 2 -->
+        <div class="officer-card scroll-reveal delay-1" id="ofc-pro2">
+          <div class="ofc-photo-wrap">
+            <div class="ofc-photo">
+              <svg viewBox="0 0 160 180" fill="none"><circle cx="80" cy="62" r="44" fill="rgba(232,93,4,0.12)" stroke="rgba(232,93,4,0.3)" stroke-width="1.5"/><path d="M10 170 C10 132 40 108 80 108 C120 108 150 132 150 170" fill="rgba(232,93,4,0.08)" stroke="rgba(232,93,4,0.22)" stroke-width="1.5"/><circle cx="68" cy="58" r="5" fill="rgba(232,93,4,0.45)"/><circle cx="92" cy="58" r="5" fill="rgba(232,93,4,0.45)"/><path d="M70 76 Q80 84 90 76" stroke="rgba(232,93,4,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              <div class="ofc-photo-label">Photo Here</div>
+            </div>
+          </div>
+          <div class="ofc-info">
+            <span class="ofc-num-small">08</span>
+            <span class="ofc-pos">PRO 2</span>
+            <h4 class="ofc-name">To Be Announced</h4>
+          </div>
+        </div>
+
+      </div><!-- /officers-grid -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       AUXILIARY BODY
+  ════════════════════════════════════════ -->
+  <section id="auxiliary" class="section auxiliary-section">
+    <div class="container">
+      <div class="section-label scroll-reveal">Representation</div>
+      <h2 class="section-mega scroll-reveal delay-1">Auxiliary<br/><em>Body</em></h2>
+
+      <!-- Tabs -->
+      <div class="prog-tabs scroll-reveal delay-2">
+        <button class="prog-tab active" id="tabCS"  onclick="switchTab('cs')">
+          <span class="tab-dot dot-cs"></span>BS Computer Science
+        </button>
+        <button class="prog-tab" id="tabCPE" onclick="switchTab('cpe')">
+          <span class="tab-dot dot-cpe"></span>BS Computer Engineering
+        </button>
+      </div>
+
+      <!-- CS Reps -->
+      <div class="reps-grid" id="csReps">
+        <div class="rep-card scroll-reveal delay-1" id="rep-cs-1">
+          <div class="rep-photo cs-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(220,20,60,0.1)" stroke="rgba(220,20,60,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(220,20,60,0.07)" stroke="rgba(220,20,60,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(220,20,60,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cs-bar">1st Year</div>
+            <span class="rep-prog-tag cs-tag">CS</span>
+            <h4 class="rep-title">1st Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+
+        <div class="rep-card scroll-reveal delay-2" id="rep-cs-2">
+          <div class="rep-photo cs-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(220,20,60,0.1)" stroke="rgba(220,20,60,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(220,20,60,0.07)" stroke="rgba(220,20,60,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(220,20,60,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cs-bar">2nd Year</div>
+            <span class="rep-prog-tag cs-tag">CS</span>
+            <h4 class="rep-title">2nd Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+
+        <div class="rep-card scroll-reveal delay-3" id="rep-cs-3">
+          <div class="rep-photo cs-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(220,20,60,0.1)" stroke="rgba(220,20,60,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(220,20,60,0.07)" stroke="rgba(220,20,60,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(220,20,60,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cs-bar">3rd Year</div>
+            <span class="rep-prog-tag cs-tag">CS</span>
+            <h4 class="rep-title">3rd Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+
+        <div class="rep-card scroll-reveal delay-4" id="rep-cs-4">
+          <div class="rep-photo cs-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(220,20,60,0.1)" stroke="rgba(220,20,60,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(220,20,60,0.07)" stroke="rgba(220,20,60,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(220,20,60,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(220,20,60,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cs-bar">4th Year</div>
+            <span class="rep-prog-tag cs-tag">CS</span>
+            <h4 class="rep-title">4th Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CPE Reps -->
+      <div class="reps-grid hidden" id="cpeReps">
+        <div class="rep-card scroll-reveal delay-1" id="rep-cpe-1">
+          <div class="rep-photo cpe-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(232,93,4,0.1)" stroke="rgba(232,93,4,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(232,93,4,0.07)" stroke="rgba(232,93,4,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(232,93,4,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cpe-bar">1st Year</div>
+            <span class="rep-prog-tag cpe-tag">CPE</span>
+            <h4 class="rep-title">1st Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+
+        <div class="rep-card scroll-reveal delay-2" id="rep-cpe-2">
+          <div class="rep-photo cpe-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(232,93,4,0.1)" stroke="rgba(232,93,4,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(232,93,4,0.07)" stroke="rgba(232,93,4,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(232,93,4,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cpe-bar">2nd Year</div>
+            <span class="rep-prog-tag cpe-tag">CPE</span>
+            <h4 class="rep-title">2nd Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+
+        <div class="rep-card scroll-reveal delay-3" id="rep-cpe-3">
+          <div class="rep-photo cpe-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(232,93,4,0.1)" stroke="rgba(232,93,4,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(232,93,4,0.07)" stroke="rgba(232,93,4,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(232,93,4,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cpe-bar">3rd Year</div>
+            <span class="rep-prog-tag cpe-tag">CPE</span>
+            <h4 class="rep-title">3rd Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+
+        <div class="rep-card scroll-reveal delay-4" id="rep-cpe-4">
+          <div class="rep-photo cpe-photo">
+            <svg viewBox="0 0 180 200" fill="none"><circle cx="90" cy="70" r="50" fill="rgba(232,93,4,0.1)" stroke="rgba(232,93,4,0.3)" stroke-width="1.5"/><path d="M15 190 C15 150 45 125 90 125 C135 125 165 150 165 190" fill="rgba(232,93,4,0.07)" stroke="rgba(232,93,4,0.22)" stroke-width="1.5"/><circle cx="77" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><circle cx="103" cy="65" r="6" fill="rgba(232,93,4,0.45)"/><path d="M79 84 Q90 93 101 84" stroke="rgba(232,93,4,0.55)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <div class="rep-photo-label">Photo Here</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-year-bar cpe-bar">4th Year</div>
+            <span class="rep-prog-tag cpe-tag">CPE</span>
+            <h4 class="rep-title">4th Year Representative</h4>
+            <p class="rep-name-field">To Be Announced</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-bg-stripe"></div>
+    <div class="container">
+      <div class="section-label scroll-reveal">Get in Touch</div>
+      <h2 class="section-mega scroll-reveal delay-1">Contact<br/><em>Us</em></h2>
+
+      <div class="contact-row">
+        <div class="contact-item scroll-reveal delay-1" id="ctc-email">
+          <div class="contact-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="contact-text">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">decs@university.edu.ph</span>
+          </div>
+        </div>
+        <div class="contact-item scroll-reveal delay-2" id="ctc-loc">
+          <div class="contact-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="contact-text">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Engineering Building, 2nd Floor</span>
+          </div>
+        </div>
+        <div class="contact-item scroll-reveal delay-3" id="ctc-fb">
+          <div class="contact-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="contact-text">
+            <span class="contact-label">Facebook</span>
+            <span class="contact-value">DECS Official Page</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOLLOW US
+  ════════════════════════════════════════ -->
+  <section id="follow" class="follow-section">
+    <div class="follow-bg-glow"></div>
+    <div class="container">
+
+      <div class="follow-header scroll-reveal">
+        <div class="section-label">Connect With Us</div>
+        <h2 class="section-mega" style="margin-bottom:16px;">Follow Us<br/><em>On Facebook</em></h2>
+        <p class="follow-sub scroll-reveal delay-1">Stay updated with the latest news, events, and announcements from our official pages.</p>
+      </div>
+
+      <div class="follow-cards scroll-reveal delay-2">
+
+        <!-- ACoES -->
+        <a
+          href="https://www.facebook.com/acoeslcba"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="follow-card"
+          id="follow-acoes"
+          aria-label="Follow ACoES on Facebook"
+        >
+          <div class="follow-card-bg acoes-bg"></div>
+
+          <div class="follow-card-top">
+            <div class="follow-fb-icon acoes-icon">
+              <!-- Facebook "f" logo -->
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="8" fill="url(#fb-acoes)"/>
+                <path d="M22 7h-2.5A4.5 4.5 0 0 0 15 11.5V14h-2v4h2v9h4v-9h2.5l.5-4H19v-2.5A.5.5 0 0 1 19.5 11H22V7z" fill="white"/>
+                <defs>
+                  <linearGradient id="fb-acoes" x1="0" y1="0" x2="36" y2="36">
+                    <stop offset="0%" stop-color="#DC143C"/>
+                    <stop offset="100%" stop-color="#E85D04"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="follow-org-tag">Student Organization</div>
+          </div>
+
+          <div class="follow-card-body">
+            <h3 class="follow-org-name">ACoES</h3>
+            <p class="follow-org-full">Association of Computer<br/>Engineering Students</p>
+            <p class="follow-org-handle">@acoeslcba</p>
+          </div>
+
+          <div class="follow-card-footer">
+            <div class="follow-btn acoes-btn">
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/>
+              </svg>
+              Follow ACoES
+            </div>
+            <span class="follow-arrow">→</span>
+          </div>
+
+          <div class="follow-card-shine"></div>
+        </a>
+
+        <!-- CCSS -->
+        <a
+          href="https://www.facebook.com/ccsslcba"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="follow-card"
+          id="follow-ccss"
+          aria-label="Follow CCSS on Facebook"
+        >
+          <div class="follow-card-bg ccss-bg"></div>
+
+          <div class="follow-card-top">
+            <div class="follow-fb-icon ccss-icon">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="8" fill="url(#fb-ccss)"/>
+                <path d="M22 7h-2.5A4.5 4.5 0 0 0 15 11.5V14h-2v4h2v9h4v-9h2.5l.5-4H19v-2.5A.5.5 0 0 1 19.5 11H22V7z" fill="white"/>
+                <defs>
+                  <linearGradient id="fb-ccss" x1="0" y1="0" x2="36" y2="36">
+                    <stop offset="0%" stop-color="#888"/>
+                    <stop offset="100%" stop-color="#C0C0C0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="follow-org-tag ccss-org-tag">Student Organization</div>
+          </div>
+
+          <div class="follow-card-body">
+            <h3 class="follow-org-name ccss-name">CCSS</h3>
+            <p class="follow-org-full">Computer Science<br/>Students Society</p>
+            <p class="follow-org-handle ccss-handle">@ccsslcba</p>
+          </div>
+
+          <div class="follow-card-footer">
+            <div class="follow-btn ccss-btn">
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/>
+              </svg>
+              Follow CCSS
+            </div>
+            <span class="follow-arrow ccss-arrow">→</span>
+          </div>
+
+          <div class="follow-card-shine"></div>
+        </a>
+
+      </div><!-- /follow-cards -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer id="footer" class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <svg width="40" height="40" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="url(#flg)" stroke-width="1.5"/>
+              <path d="M20 24L13 32L20 40" stroke="#E85D04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44 24L51 32L44 40" stroke="#C0C0C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M37 18L27 46" stroke="url(#flg)" stroke-width="2" stroke-linecap="round"/>
+              <defs><linearGradient id="flg" x1="0" y1="0" x2="64" y2="64"><stop offset="0%" stop-color="#DC143C"/><stop offset="100%" stop-color="#E85D04"/></linearGradient></defs>
+            </svg>
+            <div>
+              <div class="footer-brand-name">DECS</div>
+              <div class="footer-brand-sub">Est. AY 2025–2026</div>
+            </div>
+          </div>
+          <p class="footer-tagline-text">Forging tomorrow's engineers<br/>and computer scientists.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/acoeslcba" target="_blank" rel="noopener noreferrer" class="fsoc" id="fsoc-acoes" aria-label="ACoES Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://www.facebook.com/ccsslcba"  target="_blank" rel="noopener noreferrer" class="fsoc" id="fsoc-ccss" aria-label="CCSS Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="#" class="fsoc" id="fsoc-em" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-links-cols">
+          <div class="footer-links-group">
+            <h5 class="footer-links-heading">Navigate</h5>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#executive">Executive</a></li>
+              <li><a href="#auxiliary">Auxiliary</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-group">
+            <h5 class="footer-links-heading">Programs</h5>
+            <ul>
+              <li><a href="#auxiliary" onclick="switchTab('cs')">BS Computer Science</a></li>
+              <li><a href="#auxiliary" onclick="switchTab('cpe')">BS Computer Engineering</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-group">
+            <h5 class="footer-links-heading">Contact</h5>
+            <ul>
+              <li><a href="#">decs@university.edu.ph</a></li>
+              <li><a href="#">Engineering Bldg, 2F</a></li>
+              <li><a href="#">Facebook Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>© 2025–2026 Department of Engineering and Computer Studies. All rights reserved.</span>
+        <span class="footer-heart">Made with <span class="hrt">♥</span> by DECS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
